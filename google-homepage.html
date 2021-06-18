@@ -36,12 +36,19 @@
                 border-radius: 50%;
             }
             .apps-hov:hover {
-                background-color: gray;
+               box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
+                background-color: rgba(0, 0, 0, 0.1);
             }
             #gaccount-box{
                 margin-top: 6px;
                 margin-right: 10px;
                 border-radius: 100%;
+            }
+            #gaccount-box-img {
+                border-radius:50%;
+            }
+            #gaccount-box-img:hover{
+                box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
             }
         </style>
         <title>
@@ -53,7 +60,7 @@
             <a id="gmail-box" href="https://mail.google.com/mail/&ogbl" alt="Gmail">Gmail</a>
             <a id="images-box" href="https://www.google.co.ve/imghp?hl=en&ogbl" alt="Images">Images</a>
             <a id="apps-box" href="https://www.google.co.ve/intl/en/about/products" alt="Google Apps"><img class="apps-hov" src="Resources/1x/outline_apps_black_24dp.png"></a>
-            <a id="gaccount-box" href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" alt="Google Account"><img style="border-radius: 50%;" src="Resources/A.png" alt="Google Account Logo" height="32px" width="32px"></a>
+            <a id="gaccount-box" href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" alt="Google Account"><img id="gaccount-box-img" src="Resources/A.png" alt="Google Account Logo" height="32px" width="32px"></a>
         </header>
     </body>
 </html>
