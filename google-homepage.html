@@ -2,6 +2,9 @@
 <html>
     <head>
         <style type="text/css">
+
+        /* Everything below this line is HEADER styling */
+
             header{
                 text-align: right;
                 display: flex;
@@ -50,17 +53,41 @@
             #gaccount-box-img:hover{
                 box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
             }
+            
+            /*Everythig Below this line is BODY styling */
+            .body-container {
+                display: grid;
+                grid-template-rows: repeat(4, auto);
+            }
+            #google-main-logo{
+                justify-self: center;
+            }
+            #searchbox{
+                justify-self: center;
+            }
+            .search-buttons{
+                justify-self: center;
+            }
         </style>
         <title>
         Google
         </title>
     </head>
-    <body>
+    <body class="body-container">
         <header>
             <a id="gmail-box" href="https://mail.google.com/mail/&ogbl" alt="Gmail">Gmail</a>
             <a id="images-box" href="https://www.google.co.ve/imghp?hl=en&ogbl" alt="Images">Images</a>
             <a id="apps-box" href="https://www.google.co.ve/intl/en/about/products" alt="Google Apps"><img class="apps-hov" src="resources/1x/outline_apps_black_24dp.png"></a>
             <a id="gaccount-box" href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" alt="Google Account"><img id="gaccount-box-img" src="resources/A.png" alt="Google Account Logo" height="32px" width="32px"></a>
         </header>
+        <body>
+            <img id="google-main-logo" src="resources/googlelogo_color_272x92dp.png" alt="Google Logo"></a>
+            <input id="searchbox" type="search">
+            <div class="search-buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+            <p id="Language-options">Google offered in: <a href="https://www.google.com/setprefs?sig=0_r_m66EClgb4LueB_nCBWjHSljBQ%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwipxeXwlafxAhU3SzABHZ4FDfEQ2ZgBCA0">Español (Latinoamérica)</a></p>
+        </body>
     </body>
 </html>
