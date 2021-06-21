@@ -14,7 +14,7 @@
                 justify-content: flex-end;
                 align-items: center;
             }
-            a{
+            header a{
                 font-size: 1em;
                 text-decoration-line: none;
                 color: rgba(0, 0, 0, 0.9);
@@ -54,40 +54,117 @@
                 box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
             }
             
-            /*Everythig Below this line is BODY styling */
+            /*Everythig Below this line is MAIN styling */
+            main{
+                font-family: Arial, sans-serif;
+                font-size: 14px; 
+                color: #3c4043;
+            }
+
             .body-container {
                 display: grid;
                 grid-template-rows: repeat(4, auto);
             }
             #google-main-logo{
                 justify-self: center;
+                margin: 0.8em 0 1.85em 0;
+            }
+            .searchbox-container{
+                display: flex;
+                flex-direction: row;
+                justify-self: center;
+                width: 584px;
+                height: 44px;
+                border: 1px;
+                border-color: rgba(0, 0, 0, 0.1);
+                border-style: solid;
+                border-radius: 30px;
+                margin: 0 0 2.05em 0;
+            }
+            .searchbox-container:hover{
+                border-color: rgba(0, 0, 0, 0);
+                box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+            }
+            .searchbox-container:focus-within{
+                border-color: rgba(0, 0, 0, 0);
+                box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+            }
+            #lupa {
+                justify-self: center;
+                align-self: center;
+                padding-left: 13px;
             }
             #searchbox{
-                justify-self: center;
+                justify-self: flex-end;
+                background-color: transparent;
+                width: 527px;
+                height: 24;
+                border: none;
+                outline: none;
             }
             .search-buttons{
                 justify-self: center;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-column-gap: 12px;
+            }
+            .search-button{
+                height: 36px;
+                min-width: 54px;
+                border: 1px;
+                background-color:#f8f9fa;
+                border-style: solid;
+                border-color: #f8f9fa;
+                border-radius: 4px;
+                padding: 0 16px;
+                font-family: inherit;
+                font-size: inherit;
+                color: inherit;
+            }
+            .search-button:hover{
+                border-color: rgba(0, 0, 0, 0);
+                box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+            }
+            #language-options{
+                text-align: center;
+                margin: 30px 0 0 0;
+                font-size: small;
+                display: inline;
+                color: #222;
+                margin-left: -3px;
+            }
+            #language-options a{
+                text-decoration-line: none;
+                margin-left: 3px;
+            }
+            #language-options a:hover{
+                text-decoration-line: underline;
             }
         </style>
         <title>
         Google
         </title>
     </head>
-    <body class="body-container">
+    <body>
         <header>
             <a id="gmail-box" href="https://mail.google.com/mail/&ogbl" alt="Gmail">Gmail</a>
             <a id="images-box" href="https://www.google.co.ve/imghp?hl=en&ogbl" alt="Images">Images</a>
             <a id="apps-box" href="https://www.google.co.ve/intl/en/about/products" alt="Google Apps"><img class="apps-hov" src="resources/1x/outline_apps_black_24dp.png"></a>
             <a id="gaccount-box" href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" alt="Google Account"><img id="gaccount-box-img" src="resources/A.png" alt="Google Account Logo" height="32px" width="32px"></a>
         </header>
-        <body>
+        
+        <main class="body-container">
             <img id="google-main-logo" src="resources/googlelogo_color_272x92dp.png" alt="Google Logo"></a>
-            <input id="searchbox" type="search">
-            <div class="search-buttons">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+            <div class="searchbox-container">
+                <img id="lupa" src="resources/magnifying-glass-1976105_640.png">
+                <input id="searchbox" type="search">
             </div>
-            <p id="Language-options">Google offered in: <a href="https://www.google.com/setprefs?sig=0_r_m66EClgb4LueB_nCBWjHSljBQ%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwipxeXwlafxAhU3SzABHZ4FDfEQ2ZgBCA0">Español (Latinoamérica)</a></p>
-        </body>
+            <div class="search-buttons">
+                <button class="search-button">Google Search</button>
+                <button class="search-button">I'm Feeling Lucky</button>
+            </div>
+            <p id="language-options">Google offered in:  <a href="https://www.google.com/setprefs?sig=0_r_m66EClgb4LueB_nCBWjHSljBQ%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwipxeXwlafxAhU3SzABHZ4FDfEQ2ZgBCA0">Español (Latinoamérica)</a></p>
+        </main>
+        <div>
     </body>
 </html>
