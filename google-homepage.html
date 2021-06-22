@@ -140,6 +140,50 @@
             #language-options a:hover{
                 text-decoration-line: underline;
             }
+
+             /*Everythig Below this line is Footer styling */
+             footer {
+                 position: absolute;
+                 right: 0;
+                 left: 0;
+                 bottom: 0;
+                 display: grid;
+                 grid-template-rows: 48px 47px;
+                 background-color: #f2f2f2;
+                 font-size: 15px;
+                 font-family: arial, sans-serif;
+                 color: rgba(0,0,0,.54);
+             }
+             .below-flex-container{
+                 display: grid;
+                 grid-template-columns: 3fr 2fr;
+                 border: 1px;
+                 border-top-style: solid;
+                 border-color: rgba(0,0,0,0.1);              
+            }
+            .below-flex-container a{
+                font-size: 14px;
+                color: rgba(0,0,0,.54);
+                text-decoration-line: none;
+            }
+            .below-flex-container a:hover{
+                text-decoration-line: underline;
+            }
+             #below-options-left{
+                 justify-self: center;
+                 align-self: center;
+             }
+
+             #below-options-right{
+                 justify-self: left;
+                 align-self: center;
+             }
+             .below-options-object{
+                 margin: 0 26px 0 0;
+             }
+             #localization{
+                 padding-left: 30px;
+             }
         </style>
         <title>
         Google
@@ -165,6 +209,22 @@
             </div>
             <p id="language-options">Google offered in:  <a href="https://www.google.com/setprefs?sig=0_r_m66EClgb4LueB_nCBWjHSljBQ%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwipxeXwlafxAhU3SzABHZ4FDfEQ2ZgBCA0">Español (Latinoamérica)</a></p>
         </main>
-        <div>
+
+        <footer>
+            <p id=localization>Venezuela</p>
+            <div class="below-flex-container">
+                <div id="below-options-left">
+                    <a class="below-options-object" style="margin-left: 65px;"href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwio46fow6nxAhVZHjQIHRhVDfkQkNQCCA4&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-VE%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw32jpTTfumVu8W5IH0OZw9j">About</a>
+                    <a class="below-options-object" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwio46fow6nxAhVZHjQIHRhVDfkQkdQCCA8&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_ve%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3c0qd6kxzYuBhr90XZxPko">Advertising</a>
+                    <a class="below-options-object" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwio46fow6nxAhVZHjQIHRhVDfkQktQCCBA&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
+                    <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+                </div>
+                <div id="below-options-right">
+                    <a class="below-options-object" style="margin-left: 60px;" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwio46fow6nxAhVZHjQIHRhVDfkQ8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-VE%26fg%3D1&usg=AOvVaw0aKqWTaRHB8y74cDdq8nYl">Privacy</a>
+                    <a class="below-options-object" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwio46fow6nxAhVZHjQIHRhVDfkQ8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-VE%26fg%3D1&usg=AOvVaw02m6OZluIA2rgd0uEOlL7z">Terms</a>
+                    <a class="below-options-object" href="">Settings</a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
