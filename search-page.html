@@ -4,6 +4,39 @@
             build this webpage - Google Search
         </title>
         <style>
-
+            body {
+                display: grid;
+                grid-template-columns: 100%; 
+                grid-template-rows: repeat(3 auto);
+            }
+            header {
+                justify-self: center;
+            }
+            main {
+                justify-self: center;
+            }
+            footer {
+                justify-self: center;
+            }
         </style>
     </head>
+    <body>
+        <header>
+            <div>
+                <a href="https://pichilino.github.io/google-homepage/"><img height="30px" width="92px" src="resources/googlelogo_color_272x92dp2.png"</a>
+                <div id="searchbox-container">
+                    <input id="searchbox" type="search">
+                    <img id="lupa" src="resources/magnifying-glass-1976105_640.png">
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </header>
+        <main>
+            Here will be the results
+        </main>
+        <footer>
+            Here will be the footer options
+        </footer>
+    </body>
