@@ -11,9 +11,10 @@
             }
             header {
                 display: grid;
-                grid-template-rows: auto 100px;
+                grid-template-rows: auto auto;
                 justify-self: left;
                 align-self: center;
+                width: 100%;
             }
                 #searchbar-kit {
                     display: flex;
@@ -62,8 +63,11 @@
                         }
                 #search-tools{
                     display: flex;
-                    justify-self: center;
-                    align-self: center;
+                    justify-self: space-evenly;
+                    align-self: flex-end;
+                    padding: 20px 0 10px 270px;
+                    border-bottom: 1px solid black;
+                    margin: 0 -0.75% 0 -10%;
                 }
             main {
                 justify-self: center;
