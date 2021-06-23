@@ -11,7 +11,7 @@
             }
             header {
                 display: grid;
-                grid-template-rows: auto 20px;
+                grid-template-rows: auto 100px;
                 justify-self: left;
                 align-self: center;
             }
@@ -60,6 +60,11 @@
                             color: rgba(0,0,0,.87);
                             font: 16px arial, sans-serif;
                         }
+                #search-tools{
+                    display: flex;
+                    justify-self: center;
+                    align-self: center;
+                }
             main {
                 justify-self: center;
             }
@@ -77,8 +82,19 @@
                     <img id="lupa" src="resources/lup.png">
                 </div>
             </div>
-            <div>
-
+            <div id="search-tools">
+                <div>
+                    All
+                    Videos
+                    News
+                    Images
+                    Maps
+                    More
+                </div>
+                <div>
+                    Settings
+                    Tools
+                </div>
             </div>
         </header>
         <main>
