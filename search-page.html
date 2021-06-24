@@ -8,10 +8,12 @@
                 display: grid;
                 grid-template-columns: 100%; 
                 grid-template-rows: repeat(auto 3);
+                font-family: Google Sans, arial, sans-serif;
+                font-size: 14px;
             }
             header {
                 display: grid;
-                grid-template-rows: auto auto;
+                grid-template-rows: auto 61px;
                 justify-self: left;
                 align-self: center;
                 width: 100%;
@@ -63,12 +65,23 @@
                         }
                 #search-tools{
                     display: flex;
+                    flex-flow: row;
                     justify-self: space-evenly;
                     align-self: flex-end;
                     padding: 20px 0 10px 270px;
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                     margin: 0 -0.75% 0 -10%;
                 }
+                    #tools-container{
+                        display: grid;
+                        grid-template-columns: repeat(12, auto);
+                        margin-bottom: -10px;
+                    }
+                        .tool-image {
+                            align-self: bottom;
+                            padding: 0 2px 3px 3px;
+                        }
+
             main {
                 justify-self: center;
             }
@@ -80,20 +93,32 @@
     <body>
         <header>
             <div id=searchbar-kit>
-                <a href="https://pichilino.github.io/google-homepage/"><img height="30.5px" width="90.5px" src="resources/googlelogo_color_272x92dp2.png"></a>
+                <a href="https://divichilino.github.io/google-homepage/"><img height="30.5px" width="90.5px" src="resources/googlelogo_color_272x92dp2.png"></a>
                 <div id="searchbox-container">
                     <input id="searchbox" type="search" value="build this webpage">
                     <img id="lupa" src="resources/lup.png">
                 </div>
             </div>
             <div id="search-tools">
-                <div>
-                    <span class="tools"><img src="resources/ColorMG.png" alt=""></span>All
-                    <span class="tools"><img src="resources/slideshow_black_24dp.svg"></span>Videos
-                    <span class="tools"><img src="resources/Screenshot 2021-06-22 at 22-26-15 build this webpage - Google Search.png"></span>News
-                    <span class="tools"><img src="resources/image_black_24dp.svg"></span>Images
-                    <span class="tools"><img src="resources/location_on_black_24dp.svg"></spam> Maps
-                    <span class="tools"><img src="resources/more_vert_black_24dp.svg"></span> More
+                <div id="tools-container">
+                    <div class="tool-image"><img width="19px" height="18px" src="resources/ColorMG.png"></div>
+                    <div class="tool-text">All</div>
+                    <div class="tool-image"><img width="21px" height="21px" src="resources/video.png"></div>
+                    <div class="tool-text">Videos</div>
+                    <div class="tool-image"><img width="22px" height="17px" src="resources/News.png"></div>
+                    <div class="tool-text">News</div>
+                    <div class="tool-image"><img width="19px" height="20px" src="resources/img.png"></div>
+                    <div class="tool-text">Images</div>
+                    <div class="tool-image"><img width="21px" height="24px" src="resources/loc.png"></div>
+                    <div class="tool-text">Maps</div>
+                    <div class="tool-image"><img width="10px" height="15px" src="resources/more.png"></div>
+                    <div class="tool-text">More</div>
+                    <!--<div class="tools" style="margin-right: 3px;"><img style="height: 20px; width: 20px; padding: 0 4px 3px 0;" src="resources/ColorMG.png"><span>All</span></div>
+                    <div class="tools"><img width="21" height="21" src="resources/video.png"><span>Videos</span></div>
+                    <div class="tools"><img width="22" height="17" src="resources/Screenshot 2021-06-22 at 22-26-15 build this webpage - Google Search.png"><span>News</span></div>
+                    <div class="tools"><img width="19" height="20" src="resources/img.png"><span>Images</span></div>
+                    <div class="tools"><img width="21" height="24" src="resources/loc.png"><span>Maps</span></div>
+                    <div class="tools"><img width="10" height="15" src="resources/more.png"><span>More</span></div>-->
                 </div>
                 <div>
                     Settings
